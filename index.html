@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Next Phase</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #ffffff;
+    color: #404040;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 60px 24px;
+  }
+  .container {
+    max-width: 640px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin-bottom: 48px;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  h1 span {
+    display: block;
+    width: 64px;
+    height: 3px;
+    background: #3b82f6;
+    margin-top: 16px;
+  }
+  p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin-bottom: 28px;
+    color: #555555;
+    font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  .highlight {
+    color: #0a0a0a;
+    font-weight: 600;
+  }
+  .number {
+    color: #3b82f6;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-weight: 700;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: #e5e5e5;
+    margin: 40px 0;
+  }
+  .callout {
+    border-left: 3px solid #3b82f6;
+    padding-left: 20px;
+    margin: 40px 0;
+  }
+  .callout p {
+    color: #0a0a0a;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+  .stats-section h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin-bottom: 32px;
+    letter-spacing: -0.3px;
+  }
+  .stats-bar-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .stats-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .stats-label {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.8rem;
+    color: #999;
+    width: 72px;
+    flex-shrink: 0;
+    text-align: right;
+  }
+  .bar-track {
+    flex: 1;
+    height: 28px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.6s ease;
+  }
+  .bar-fill.old { background: #fbbf24; }
+  .bar-fill.mid { background: #a3e635; }
+  .bar-fill.good { background: #34d399; }
+  .bar-fill.great { background: #3b82f6; }
+  .stats-value {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    width: 56px;
+    flex-shrink: 0;
+  }
+  .old-val { color: #d97706; }
+  .mid-val { color: #65a30d; }
+  .good-val { color: #059669; }
+  .great-val { color: #3b82f6; }
+  .stats-caption {
+    font-size: 0.95rem;
+    color: #777;
+    line-height: 1.7;
+  }
+  .stats-subtitle {
+    font-size: 1.05rem;
+    color: #777;
+    margin-bottom: 28px;
+  }
+  .ai-chart {
+    margin-bottom: 28px;
+  }
+  .chart-row {
+    display: flex;
+    gap: 8px;
+  }
+  .chart-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.7rem;
+    color: #bbb;
+    padding: 2px 0;
+    width: 36px;
+    flex-shrink: 0;
+    text-align: right;
+  }
+  .chart-area {
+    flex: 1;
+  }
+  .line-chart {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+  .chart-x-labels {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 0.7rem;
+    color: #bbb;
+    margin-top: 6px;
+    padding-left: 0;
+  }
+  .chart-legend {
+    display: flex;
+    gap: 24px;
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: #999;
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .legend-dot.purple { background: #b4a7d6; }
+  .legend-dot.teal { background: #7ecbc0; }
+  .ai-stats-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin: 32px 0;
+  }
+  .ai-stat { text-align: center; }
+  .ai-stat-number {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .ai-stat-label {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 4px;
+  }
+  .ai-stat-arrow {
+    font-size: 2rem;
+    color: #ccc;
+  }
+  .runway-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px 0;
+  }
+  .runway-block {}
+  .runway-bar {
+    height: 36px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .runway-bar.before .runway-fill {
+    height: 100%;
+    background: #fbbf24;
+    border-radius: 4px;
+  }
+  .runway-bar.after .runway-fill {
+    height: 100%;
+    background: #3b82f6;
+    border-radius: 4px;
+  }
+  .runway-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+  }
+  .runway-time {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0a0a0a;
+  }
+  .runway-label {
+    font-size: 0.8rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .footer {
+    margin-top: 64px;
+    font-size: 0.85rem;
+    color: #c0c0c0;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>The Next Phase<span></span></h1>
+
+  <p>Things are going to get hard from here. It's not going to get easy.</p>
+
+  <p>However — we figured out one of the hardest problems in AI: <span class="highlight">getting these models to stop hallucinating.</span> As a team, rolling this out and making sure it performs with enterprise-grade quality is one of the hardest things any company could ever do.</p>
+
+  <p>The bad news is we're not there yet.<br>The good news is <span class="highlight">we're almost there.</span></p>
+
+  <div class="divider"></div>
+
+  <p>We built this company from the ground up. It went to <span class="number">$0</span> → <span class="number">$45M</span> → <span class="number">$0</span> → <span class="number">$200M</span>.</p>
+
+  <div class="callout">
+    <p>We want to make this company a <span class="number">$20 billion</span> company by <span class="number">2027</span>.</p>
+  </div>
+
+  <p>This will not be easy. If it was easy, everybody would do it.</p>
+
+  <div class="divider"></div>
+
+  <p>The entire focus of the company over the next couple of weeks:</p>
+
+  <p>
+    <span class="highlight">Get the platform stable.</span><br>
+    <span class="highlight">Invest energy and resources to fix it for good.</span><br>
+    <span class="highlight">Remove the integration bottleneck.</span>
+  </p>
+
+  <p>The leadership team here at Sully is working day and night — hiring the right leaders, fixing the core fundamental problems, and getting the platform to where it needs to be.</p>
+
+  <div class="divider"></div>
+
+  <p>It's not going to be easy and we might lose some people along the way. But the journey to getting there will definitely be enjoyable.</p>
+
+  <p><span class="highlight">And when we get there, it's going to pay off.</span></p>
+
+  <div class="divider"></div>
+
+  <div class="stats-section">
+    <h2>Where We Were → Where We Are</h2>
+    <div class="stats-bar-wrap">
+      <div class="stats-row">
+        <span class="stats-label">Aug 2025</span>
+        <div class="bar-track">
+          <div class="bar-fill old" style="width:95%"></div>
+        </div>
+        <span class="stats-value old-val">95.0%</span>
+      </div>
+      <div class="stats-row">
+        <span class="stats-label">Sep 2025</span>
+        <div class="bar-track">
+          <div class="bar-fill old" style="width:96.3%"></div>
+        </div>
+        <span class="stats-value old-val">~98.0%</span>
+      </div>
+      <div class="stats-row">
+        <span class="stats-label">Oct 2025</span>
+        <div class="bar-track">
+          <div class="bar-fill mid" style="width:97.2%"></div>
+        </div>
+        <span class="stats-value mid-val">~98.4%</span>
+      </div>
+      <div class="stats-row">
+        <span class="stats-label">Nov 2025</span>
+        <div class="bar-track">
+          <div class="bar-fill good" style="width:98.6%"></div>
+        </div>
+        <span class="stats-value good-val">~99.1%</span>
+      </div>
+      <div class="stats-row">
+        <span class="stats-label">Dec 2025</span>
+        <div class="bar-track">
+          <div class="bar-fill great" style="width:99.12%"></div>
+        </div>
+        <span class="stats-value great-val">99.12%</span>
+      </div>
+    </div>
+    <p class="stats-caption">Platform stability: technical audio error rate dropped from <span class="number">~1,775/week</span> to <span class="number">415/week</span> — a <span class="highlight">4x reduction</span> in 4 months.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="stats-section">
+    <h2>AI Generation Stability</h2>
+    <p class="stats-subtitle">From <span class="number">95.5%</span> to <span class="number">99.95%</span> — error rate approaching zero.</p>
+    <div class="ai-chart">
+      <div class="chart-row">
+        <div class="chart-labels">
+          <span>100%</span>
+          <span>95%</span>
+          <span>90%</span>
+        </div>
+        <div class="chart-area">
+          <svg viewBox="0 0 800 200" preserveAspectRatio="none" class="line-chart">
+            <!-- grid lines -->
+            <line x1="0" y1="0" x2="800" y2="0" stroke="#e5e5e5" stroke-width="1"/>
+            <line x1="0" y1="100" x2="800" y2="100" stroke="#e5e5e5" stroke-width="1" stroke-dasharray="4"/>
+            <line x1="0" y1="200" x2="800" y2="200" stroke="#e5e5e5" stroke-width="1"/>
+            <!-- stability line (purple) - scaled: 0=90%, 200=100% -->
+            <polyline fill="none" stroke="#b4a7d6" stroke-width="2.5" stroke-linejoin="round"
+              points="0,118 40,128 80,124 120,106 160,106 200,0 240,103 280,106 320,70 360,95 400,94 440,0 480,4 520,3 560,1 600,0 640,29 680,14 720,0 760,2 800,1"/>
+            <!-- error rate line (teal) - scaled to bottom portion -->
+            <polyline fill="none" stroke="#7ecbc0" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6,3"
+              points="0,200 40,172 80,148 120,164 160,168 200,174 240,170 280,162 320,172 360,200 400,189 440,200 480,200 520,199 560,200 600,186 640,183 680,156 720,200 760,200 800,200"/>
+          </svg>
+          <div class="chart-x-labels">
+            <span>Jan 1</span>
+            <span>Jan 15</span>
+            <span>Jan 29</span>
+            <span>Feb 12</span>
+          </div>
+        </div>
+      </div>
+      <div class="chart-legend">
+        <span class="legend-item"><span class="legend-dot purple"></span> Stability %</span>
+        <span class="legend-item"><span class="legend-dot teal"></span> Error rate %</span>
+      </div>
+    </div>
+    <div class="ai-stats-grid">
+      <div class="ai-stat">
+        <div class="ai-stat-number" style="color:#d97706">95.5%</div>
+        <div class="ai-stat-label">Jan 1, 2026</div>
+      </div>
+      <div class="ai-stat-arrow">→</div>
+      <div class="ai-stat">
+        <div class="ai-stat-number" style="color:#3b82f6">99.95%</div>
+        <div class="ai-stat-label">Feb 14, 2026</div>
+      </div>
+    </div>
+    <p class="stats-caption">AI generation errors dropped from <span class="number">13%</span> to near <span class="number">0%</span>. The model isn't just better — it's <span class="highlight">enterprise-ready</span>.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="stats-section">
+    <h2>Runway: Secured & Extended</h2>
+  </div>
+
+  <p>We went out and secured capital from investors who don't just write checks — they <span class="highlight">believe in what we're building.</span></p>
+
+  <p><span class="highlight">LifeX. HP Ventures. Workday.</span></p>
+
+  <p>These aren't passive investors. These are strategic partners who looked at our technology, our team, and our trajectory — and put real money behind it.</p>
+
+  <div class="runway-visual">
+    <div class="runway-block">
+      <div class="runway-bar before">
+        <div class="runway-fill" style="width:55%"></div>
+      </div>
+      <div class="runway-meta">
+        <span class="runway-time">6 months</span>
+        <span class="runway-label">Before</span>
+      </div>
+    </div>
+    <div class="runway-block">
+      <div class="runway-bar after">
+        <div class="runway-fill" style="width:100%"></div>
+      </div>
+      <div class="runway-meta">
+        <span class="runway-time">1.1 years</span>
+        <span class="runway-label">Now</span>
+      </div>
+    </div>
+  </div>
+
+  <p>Runway went from <span class="number">6 months</span> to <span class="number">1.1 years</span>. That's not just money — that's <span class="highlight">time to execute.</span> Time to get the platform right. Time to hire the right people. Time to win.</p>
+
+  <p>We're not scrambling. We're building — with the backing to see it through.</p>
+
+  <div class="footer">— sully.ai</div>
+
+</div>
+</body>
+</html>
