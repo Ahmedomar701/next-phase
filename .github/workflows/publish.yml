@@ -1,0 +1,54 @@
+name: publish
+
+# Pages is configured as "deploy from a branch", so the built site has to be
+# committed to main. This rebuilds it whenever the source or content changes,
+# and GitHub's own pages-build-deployment then serves the result.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'content/**'
+      - 'lib/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'next.config.mjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/publish.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run publish:site
+
+      - name: Commit the built site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "site is already up to date"
+            exit 0
+          fi
+          git commit -m "Rebuild published site [skip ci]"
+          git push

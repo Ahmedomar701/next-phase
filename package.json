@@ -1,0 +1,28 @@
+{
+  "name": "next-phase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal, research-paper-flavoured writing blog.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "new": "node scripts/new-post.mjs",
+    "publish:site": "node scripts/publish.mjs"
+  },
+  "dependencies": {
+    "gray-matter": "4.0.3",
+    "markdown-it": "15.0.1",
+    "markdown-it-footnote": "4.0.0",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "typescript": "~5.9.3"
+  }
+}
