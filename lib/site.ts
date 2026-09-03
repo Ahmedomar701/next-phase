@@ -7,7 +7,7 @@ export const site = {
   description:
     'Long-form notes and field reports on technology. Text only: no images, no trackers, no newsletter popups.',
   // Used for absolute URLs in the RSS feed and metadata. No trailing slash.
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://next-phase.vercel.app',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ahmedomar701.github.io',
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
   language: 'en',
   // Shown in the footer. Set to '' to hide a line.
