@@ -3,11 +3,16 @@ import { absoluteUrl, site } from './site';
 
 const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 
+const STOP_WORDS = new Set(['a', 'an', 'the', 'of', 'on', 'in', 'and', 'for', 'to']);
+
 function citationKey(post: PostMeta): string {
   const surname = site.name.split(/\s+/).pop()?.toLowerCase().replace(/[^a-z]/g, '') || 'author';
-  const year = post.date.slice(0, 4);
-  const stem = post.slug.split('-').slice(0, 2).join('');
-  return `${surname}${year}${stem}`;
+  const stem = post.slug
+    .split('-')
+    .filter((word) => !STOP_WORDS.has(word))
+    .slice(0, 2)
+    .join('');
+  return `${surname}${post.date.slice(0, 4)}${stem}`;
 }
 
 export function bibtex(post: PostMeta): string {

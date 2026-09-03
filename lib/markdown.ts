@@ -71,27 +71,86 @@ md.core.ruler.push('anchors_and_toc', (state) => {
   }
 });
 
-// ```figure Caption goes here  →  a captioned, monospaced data block.
+function wrapFigure(body: string, caption: string, n: number): string {
+  return [
+    '<figure class="figure">',
+    body,
+    caption
+      ? `<figcaption><span class="figure-label">Fig. ${n}</span> ${renderInlineMarkdown(caption)}</figcaption>`
+      : '',
+    '</figure>\n',
+  ]
+    .filter(Boolean)
+    .join('\n');
+}
+
+/**
+ * ```bars Caption
+ * # month      | error rate
+ * 2025-08 95%  | 5.00 | 5.00 %
+ * ```
+ * Rows are `label | number | printed value`. Bars are drawn in CSS so they
+ * stay crisp instead of relying on block glyphs to tile.
+ */
+function renderBars(source: string): string {
+  const lines = source.split('\n').filter((line) => line.trim() !== '');
+  const header = lines[0]?.startsWith('#')
+    ? lines
+        .shift()!
+        .slice(1)
+        .split('|')
+        .map((cell) => cell.trim())
+    : null;
+
+  const rows = lines.map((line) => {
+    const [label = '', rawValue = '', display] = line.split('|').map((cell) => cell.trim());
+    const value = Number.parseFloat(rawValue.replace(/[^0-9.eE+-]/g, ''));
+    return {
+      label,
+      value: Number.isFinite(value) ? Math.abs(value) : 0,
+      display: display ?? rawValue,
+    };
+  });
+
+  const max = Math.max(...rows.map((row) => row.value), 0) || 1;
+
+  const head = header
+    ? `<thead><tr><th scope="col">${escapeHtml(header[0] ?? '')}</th><th scope="col">${escapeHtml(
+        header[1] ?? '',
+      )}</th><th scope="col">${escapeHtml(header[2] ?? '')}</th></tr></thead>`
+    : '';
+
+  const body = rows
+    .map(
+      (row) =>
+        `<tr><th scope="row">${escapeHtml(row.label)}</th>` +
+        `<td class="barplot-track"><span class="barplot-bar" style="width:${(
+          (row.value / max) *
+          100
+        ).toFixed(3)}%"></span></td>` +
+        `<td class="barplot-value">${escapeHtml(row.display)}</td></tr>`,
+    )
+    .join('');
+
+  return `<div class="figure-frame"><table class="barplot">${head}<tbody>${body}</tbody></table></div>`;
+}
+
+// ```figure Caption  →  captioned monospace block. ```bars Caption  →  bar plot.
 const defaultFence = md.renderer.rules.fence!;
 md.renderer.rules.fence = (tokens, idx, options, env, self) => {
   const token = tokens[idx];
   const [lang, ...captionWords] = token.info.trim().split(/\s+/);
+  const isFigure = lang === 'figure' || lang === 'data';
+  const isBars = lang === 'bars';
 
-  if (lang === 'figure' || lang === 'data') {
+  if (isFigure || isBars) {
     const renderEnv = env as RenderEnv;
     renderEnv.figures = (renderEnv.figures ?? 0) + 1;
-    const caption = captionWords.join(' ');
-    const body = escapeHtml(token.content.replace(/\n+$/, ''));
-    return [
-      '<figure class="figure">',
-      `<pre class="figure-body">${body}</pre>`,
-      caption
-        ? `<figcaption><span class="figure-label">Fig. ${renderEnv.figures}</span> ${renderInlineMarkdown(caption)}</figcaption>`
-        : '',
-      '</figure>\n',
-    ]
-      .filter(Boolean)
-      .join('\n');
+    const content = token.content.replace(/\n+$/, '');
+    const body = isBars
+      ? renderBars(content)
+      : `<pre class="figure-body figure-frame">${escapeHtml(content)}</pre>`;
+    return wrapFigure(body, captionWords.join(' '), renderEnv.figures);
   }
 
   return defaultFence(tokens, idx, options, env, self);

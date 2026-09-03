@@ -17,6 +17,7 @@
   --ink: #16171a;
   --body: #2c2e33;
   --muted: #85888f;
+  --soft: #5f6268;
   --faint: #a8abb1;
   --rule: #e3e3dd;
   --rule-strong: #cfcfc8;
@@ -34,6 +35,7 @@
     --ink: #eeece7;
     --body: #c8c6c1;
     --muted: #7f838a;
+    --soft: #9b9993;
     --faint: #62666d;
     --rule: #26282c;
     --rule-strong: #383b40;
@@ -51,6 +53,7 @@
   --ink: #eeece7;
   --body: #c8c6c1;
   --muted: #7f838a;
+  --soft: #9b9993;
   --faint: #62666d;
   --rule: #26282c;
   --rule-strong: #383b40;
@@ -356,7 +359,7 @@ hr {
   margin: 0.45rem 0 0;
   font-size: 0.97rem;
   line-height: 1.62;
-  color: var(--muted);
+  color: var(--soft);
   text-wrap: pretty;
 }
 
@@ -616,11 +619,11 @@ hr {
 
 .prose code {
   font-family: var(--font-mono);
-  font-size: 0.855em;
+  font-size: 0.875em;
+  font-variant-numeric: tabular-nums;
   background: var(--paper-sunk);
-  border: 1px solid var(--rule);
-  border-radius: 3px;
-  padding: 0.08em 0.32em;
+  border-radius: 2px;
+  padding: 0.06em 0.26em;
   color: var(--ink);
 }
 
@@ -648,19 +651,92 @@ hr {
   margin: 2.2rem 0;
 }
 
-.prose .figure-body {
-  margin: 0;
+.prose .figure-frame {
   padding: 1.1rem 1.15rem;
   background: none;
   border: 1px solid var(--rule);
   border-radius: 3px;
+  overflow-x: auto;
+}
+
+.prose .figure-body {
+  margin: 0;
   font-family: var(--font-mono);
   font-size: 0.76rem;
   line-height: 1.75;
   font-variant-numeric: tabular-nums;
   color: var(--ink);
-  overflow-x: auto;
   white-space: pre;
+}
+
+.prose .barplot {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.5;
+}
+
+.prose .barplot thead th {
+  padding: 0 0 0.6rem;
+  border: 0;
+  font-size: 0.66rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+  text-align: left;
+  white-space: pre;
+}
+
+.prose .barplot thead th:first-child {
+  padding-right: 1rem;
+}
+
+.prose .barplot thead th:last-child {
+  text-align: right;
+}
+
+.prose .barplot tbody th {
+  width: 1%;
+  padding: 0.32rem 1rem 0.32rem 0;
+  border: 0;
+  font-weight: 400;
+  text-align: left;
+  white-space: pre;
+  color: var(--ink);
+}
+
+.prose .barplot-track {
+  width: 100%;
+  padding: 0.32rem 0;
+  border: 0;
+  background-image: linear-gradient(
+    color-mix(in srgb, var(--rule) 55%, transparent),
+    color-mix(in srgb, var(--rule) 55%, transparent)
+  );
+  background-size: 100% 0.6rem;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+}
+
+.prose .barplot-bar {
+  display: block;
+  height: 0.6rem;
+  min-width: 2px;
+  background: var(--accent);
+  border-radius: 1px;
+}
+
+.prose .barplot-value {
+  width: 1%;
+  padding: 0.32rem 0 0.32rem 1rem;
+  border: 0;
+  text-align: right;
+  white-space: pre;
+  color: var(--ink);
 }
 
 .prose figcaption {
@@ -753,14 +829,20 @@ hr {
 
 .prose .footnotes-list {
   margin: 0;
-  padding-left: 1.6rem;
+  padding-left: 1.9rem;
 }
 
 .prose .footnote-item {
   margin-bottom: 0.7rem;
   font-size: 0.925rem;
   line-height: 1.62;
-  color: var(--muted);
+  color: var(--soft);
+}
+
+.prose .footnote-item::marker {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--faint);
 }
 
 .prose .footnote-item p {
@@ -942,6 +1024,7 @@ hr {
     --ink: #000;
     --body: #111;
     --muted: #444;
+    --soft: #333;
     --accent: #000;
   }
 

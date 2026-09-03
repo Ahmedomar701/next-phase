@@ -38,14 +38,13 @@ It's not going to be easy and we might lose some people along the way. But the j
 
 Where we were, and where we are. The bar plots the *error* rate rather than the stability figure, because at these magnitudes the interesting movement is in the residual, not the headline.[^residual]
 
-```figure Weekly platform stability, Aug–Dec 2025. Each block ≈ 0.25 percentage points of error.
-month      stability    error rate
---------   ---------    -----------------------------
-2025-08       95.00%    ████████████████████   5.00 %
-2025-09      ~98.00%    ████████               2.00 %
-2025-10      ~98.40%    ██████▌                1.60 %
-2025-11      ~99.10%    ███▌                   0.90 %
-2025-12       99.12%    ███▌                   0.88 %
+```bars Weekly platform stability, Aug–Dec 2025. Bars are the residual error rate; shorter is better.
+# month · stability | residual error rate
+2025-08   95.00% | 5.00 | 5.00 %
+2025-09  ~98.00% | 2.00 | 2.00 %
+2025-10  ~98.40% | 1.60 | 1.60 %
+2025-11  ~99.10% | 0.90 | 0.90 %
+2025-12   99.12% | 0.88 | 0.88 %
 ```
 
 Technical audio errors dropped from roughly `1,775` per week to `415` per week — a **4× reduction in four months.**
@@ -54,11 +53,10 @@ Technical audio errors dropped from roughly `1,775` per week to `415` per week �
 
 ## AI generation stability
 
-```figure Generation stability and error rate, Jan 1 – Feb 14, 2026.
-date          stability    generation errors
-----------    ---------    ---------------------------
-2026-01-01       95.50%    █████████████   13.0 %
-2026-02-14       99.95%    ▏                0.1 %
+```bars Generation stability, Jan 1 – Feb 14, 2026. Bars are the generation error rate.
+# date · stability | generation error rate
+2026-01-01  95.50% | 13.0 | 13.0 %
+2026-02-14  99.95% |  0.1 | 0.1 %
 ```
 
 Generation errors fell from `13%` to effectively zero. The model isn't just better — it's **enterprise-ready.**
@@ -69,9 +67,10 @@ We went out and secured capital from investors who don't just write checks — t
 
 These aren't passive investors. These are strategic partners who looked at our technology, our team, and our trajectory — and put real money behind it.
 
-```figure Runway before and after the round. Each block = one month.
-before    ████████████                6 months
-now       ██████████████████████████  1.1 years
+```bars Runway before and after the round.
+# stage | months of runway
+before | 6  | 6 months
+now    | 13 | 1.1 years
 ```
 
 Runway went from six months to `1.1` years. That's not just money — that's **time to execute.** Time to get the platform right. Time to hire the right people. Time to win.

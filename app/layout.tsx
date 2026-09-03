@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { DM_Mono, DM_Sans } from 'next/font/google';
 import Link from 'next/link';
 import ThemeToggle from './theme-toggle';
-import { site } from '@/lib/site';
+import { absoluteUrl, site } from '@/lib/site';
 import './globals.css';
 
 const dmSans = DM_Sans({
@@ -19,7 +19,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
+  metadataBase: new URL(absoluteUrl('/')),
   title: {
     default: site.title,
     template: `%s — ${site.name}`,

@@ -57,9 +57,10 @@ export default function Colophon() {
         <p>
           Sections are numbered in the margin so a passage can be pointed at precisely. Footnotes
           are collected under <em>Notes</em> at the foot of each entry. Quantitative claims are
-          set as monospaced figures with captions rather than charts, because a table of numbers
-          survives being copied, quoted, and read aloud in a way that a picture of numbers does
-          not. Every entry carries a BibTeX record, in case anyone wants to cite one.
+          set as captioned figures: fixed-grid text where the numbers are the point, and bars
+          drawn in CSS — never an image — where a proportion is. The printed value always sits
+          next to the bar, so a figure survives being copied, quoted, or read aloud. Every entry
+          carries a BibTeX record, in case anyone wants to cite one.
         </p>
 
         <p>
