@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://ahmedomar701.github.io/next-phase/sitemap.xml
