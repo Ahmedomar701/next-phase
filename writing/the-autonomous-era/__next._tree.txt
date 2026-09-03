@@ -3,4 +3,4 @@
 :HL["/next-phase/_next/static/media/5c285b27cdda1fe8-s.p.2_mbdogr7ni8i.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/next-phase/_next/static/media/7546fe8f902b88b8-s.p.1agee208_hwfr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/next-phase/_next/static/media/a73419dd2ba2d841-s.p.2yee423r7ahpo.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"writing","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"the-autonomous-era","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"9FYpmY8trwosu6JngD-ws"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"writing","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"the-autonomous-era","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"site"}
