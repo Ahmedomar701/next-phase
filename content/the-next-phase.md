@@ -6,6 +6,7 @@ abstract: >-
   make it hold at enterprise grade. A status report on stability, capital, and
   the four weeks in front of us.
 tags: [company, reliability, ai]
+draft: true
 ---
 
 Things are going to get hard from here. It's not going to get easy.
