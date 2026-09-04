@@ -1,0 +1,83 @@
+1:"$Sreact.fragment"
+2:I[22016,["/next-phase/_next/static/chunks/22bksh_y65dub.js"],""]
+3:I[25648,["/next-phase/_next/static/chunks/22bksh_y65dub.js"],"default"]
+4:I[39756,["/next-phase/_next/static/chunks/22bksh_y65dub.js"],"default"]
+5:I[37457,["/next-phase/_next/static/chunks/22bksh_y65dub.js"],"default"]
+7:I[97367,["/next-phase/_next/static/chunks/22bksh_y65dub.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+b:I[97367,["/next-phase/_next/static/chunks/22bksh_y65dub.js"],"ViewportBoundary"]
+d:I[97367,["/next-phase/_next/static/chunks/22bksh_y65dub.js"],"MetadataBoundary"]
+f:I[68027,["/next-phase/_next/static/chunks/22bksh_y65dub.js"],"default",1]
+:HL["/next-phase/_next/static/chunks/44jwbxbu6eg4y.css","style"]
+:HL["/next-phase/_next/static/media/36363bfb06833f56-s.p.38hmww4cj4vme.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/next-phase/_next/static/media/5c285b27cdda1fe8-s.p.2_mbdogr7ni8i.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/next-phase/_next/static/media/7546fe8f902b88b8-s.p.1agee208_hwfr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/next-phase/_next/static/media/a73419dd2ba2d841-s.p.2yee423r7ahpo.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+a:X
+0:{"P":null,"c":["","writing","will-commoditized-ai-save-your-mom",""],"q":"","i":false,"f":[[["",{"children":["writing",{"children":[["slug","will-commoditized-ai-save-your-mom","d",[]],{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/next-phase/_next/static/chunks/44jwbxbu6eg4y.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/next-phase/_next/static/chunks/22bksh_y65dub.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"dm_sans_34a85c05-module__gGo3DG__variable dm_mono_d528643b-module__yPFinq__variable","children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}"}}]}],["$","body",null,{"children":["$","div",null,{"className":"shell","children":[["$","header",null,{"className":"masthead","children":["$","div",null,{"className":"wrap","children":["$","div",null,{"className":"masthead-row","children":[["$","$L2",null,{"href":"/","className":"masthead-name","children":"A. Omar"}],["$","nav",null,{"className":"nav","children":[["$","$L2",null,{"href":"/","children":"index"}],["$","$L2",null,{"href":"/colophon/","children":"colophon"}],["$","a",null,{"href":"/next-phase/feed.xml","children":"rss"}],["$","$L3",null,{}]]}]]}]}]}],["$","main",null,{"className":"main","children":["$","div",null,{"className":"wrap","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","article",null,{"children":[["$","h1",null,{"className":"page-title","children":"404 — no such entry"}],["$","div",null,{"className":"prose","style":{"marginTop":0},"children":["$","p",null,{"children":"That address does not resolve to anything written here."}]}],["$","$L2",null,{"className":"back-link","href":"/","children":"← back to index"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}],["$","footer",null,{"className":"footer","children":["$","div",null,{"className":"wrap","children":["$","div",null,{"className":"footer-row","children":[["$","span",null,{"children":["© ",2026," ","Ahmed Omar"," · text only, no trackers"]}],["$","span",null,{"className":"footer-links","children":[["$","a","https://github.com/Ahmedomar701",{"href":"https://github.com/Ahmedomar701","children":"github"}]]}]]}]}]}]]}]}]]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],{},null,false,null]},null,false,"$a"]},null,false,"$a"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lb",null,{"children":"$Lc"}],["$","div",null,{"hidden":true,"children":["$","$Ld",null,{"children":["$","$8",null,{"name":"Next.Metadata","children":"$Le"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$f",[["$","link","0",{"rel":"stylesheet","href":"/next-phase/_next/static/chunks/44jwbxbu6eg4y.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"site"}
+a:C
+10:T1551,<h2 id="commoditize-everything-in-healthcare">Commoditize everything in healthcare</h2>
+<p>The basics are toast. Meeting notes? Scribe bots? Virtual receptionists? All headed to <code>$0</code>. They’ll be bundled into every SaaS suite, every EHR, every cloud console. Palantir, Google, Epic — they’ll ship “good enough” versions at scale, because scale is their religion.</p>
+<p>But here’s the catch: good enough still costs them <code>200%</code> margins to protect those <code>$300M</code> VP comp lines. And good enough costs health systems billions of dollars in inefficiencies. They can’t afford to be <em>great</em>. They can only afford to be <em>good enough</em>.</p>
+<p>That’s the opportunity.</p>
+<p>Startups don’t win by competing on the commodity layer. We win by turning the <code>1%</code> edge into a <code>$100B</code> moat.</p>
+<p>The average hospital uses <code>50–500</code> software tools. EHRs are dumb legacy databases whose UX and firewalls have caused fatal errors and human deaths; most of them are working very hard to justify their existence before they become obsolete. In healthcare, <code>1%</code> better isn’t a nice-to-have. It’s the difference between catching a suicide risk in a voice tremor and missing it — between flagging a lithium toxicity spike 48 hours early and reacting when the patient is in the ER.</p>
+<p>Example: eClinicalWorks launched its own AI solutions; instead of focusing on ways to save physicians’ time, it takes <code>17</code> clicks to launch any AI feature.</p>
+<p>Zoom out:</p>
+<figure class="figure">
+<pre class="figure-body figure-frame">                    commodity                         elite
+people              $40K / year                       $1B  (Zuck's FB offers)
+AI agents           voice agent that can              Sully receptionist:
+                    handle patient calls, $0          schedules, defers &gt;50% of
+                                                      humans, detects, acts,
+                                                      wearable drift alerts
+                                                      → $1B+ / year in outcomes</pre>
+<figcaption><span class="figure-label">Fig. 1</span> The same delta, twice.</figcaption>
+</figure>
+<p><code>80%</code> of clinical work is <em>complex, time-sensitive, and multi-modal</em>. That’s not commoditizable with one <code>7B</code> model and a prompt. It needs:</p>
+<ul>
+<li><code>20</code> API calls to <code>10</code> different systems, excluding the EHR</li>
+<li><code>10–20</code> different open-source LLM calls</li>
+<li><code>3</code> wearables</li>
+<li><code>1</code> EHR</li>
+<li><code>1</code> genomic feed</li>
+<li>a real-time QA loop</li>
+</ul>
+<p>Large players <em>can’t</em> move this fast. Their org charts won’t let them.</p>
+<h2 id="the-premium-people-are-willing-to-pay-for">The premium people are willing to pay for</h2>
+<p>Ask a psychiatrist:</p>
+<blockquote>
+<p>Would you pay <code>$500</code>/month for an AI that texts your patient at 2am, detects flat affect, and books a crisis visit before you even wake up?</p>
+</blockquote>
+<p>Ask a daughter:</p>
+<blockquote>
+<p>Would you pay <code>$99</code>/month to know Dad’s Apple Watch + voice + med adherence predicts a fall risk 6 months out?</p>
+</blockquote>
+<p>The answer isn’t “maybe.” It’s “shut up and take my card.”</p>
+<p>The basic features of agents will be commoditized, and we will be the first to make them free — but we’re building the state-of-the-art systems that can autonomously track the holistic picture of your health, in commune with human doctors, to provide the absolute best preventative and high-quality care.</p>
+<p>These experiences don’t exist at scale today. When they do, the TAM isn’t “clinics.” It’s every single <em>family</em>.</p>
+<h2 id="sullys-play">Sully’s play</h2>
+<p>We’re not building another agent. We’re building the autonomous OS — the orchestrator.</p>
+<ul>
+<li>Plug in Oura, Apple, Epic, Cerner, Groq, Anthropic, your custom RAG.</li>
+<li>Route every patient interaction to the <em>right</em> model at the <em>right</em> latency and cost.</li>
+<li>Run evals on <code>100%</code> of outputs (HIPAA-compliant, monitored by humans for safety).</li>
+<li>Predict <code>6–8–20</code> months out: “Mrs. Chen’s lithium levels + sleep fragmentation → <code>87%</code> renal event risk by Q3 2026.”</li>
+</ul>
+<p>We’ll never do everything. But we’ll integrate <em>enough</em> to ship <strong>predictive care loops</strong> that no EHR dares to touch.</p>
+<h2 id="the-autonomous-operating-system">The autonomous operating system</h2>
+<p>Agents are coming. You’ll need a PhD agent to tune one for rare-disease diagnostics. You’ll need a GM agent to run <code>47</code> of them in parallel. And we will need a better operating system that can intelligently store, manage, and reason over all these concurrent operations.</p>
+<p>At Sully, we’re building that AutonomousOS, and this isn’t just a nice vision on the wall; we’ve already seen it from customers.</p>
+<blockquote>
+<p>Feedback from a Sully.ai customer.</p>
+</blockquote>
+<p>Commoditized AI will handle <code>20%</code> of the edge cases. We will own the <code>80%</code> where <em>lives compound</em>.</p>
+<p>The race isn’t to build the model, the agent, or a use-case. It’s to build the system that <em>autonomously</em> operates systems.</p>
+6:["$","article",null,{"children":[["$","header",null,{"className":"article-header","children":[["$","p",null,{"className":"eyebrow","children":["Entry ","002"," · ","2025-11-12"]}],["$","h1",null,{"className":"article-title","children":"Will \"commoditized AI\" save your mom?"}],["$","div",null,{"className":"article-abstract","children":[["$","span",null,{"className":"label","children":"Abstract"}],["$","span",null,{"dangerouslySetInnerHTML":{"__html":"The commodity layer of healthcare AI is heading to zero. The money, and the lives, sit in the 1% that large incumbents cannot afford to be great at."}}]]}],["$","dl",null,{"className":"frontmatter","children":[["$","dt",null,{"children":"author"}],["$","dd",null,{"children":"Ahmed Omar"}],["$","dt",null,{"children":"posted"}],["$","dd",null,{"children":"November 12, 2025"}],"$undefined",["$","dt",null,{"children":"length"}],["$","dd",null,{"children":["604"," words · ",3," min read"]}],["$","dt",null,{"children":"subjects"}],["$","dd",null,{"children":"commoditization · healthcare · autonomy"}]]}],["$","nav",null,{"className":"contents","aria-label":"Contents","children":[["$","h2",null,{"className":"rule-label","children":[["$","span",null,{"children":"Contents"}],["$","span",null,{"className":"line"}]]}],["$","ol",null,{"children":[["$","li","commoditize-everything-in-healthcare",{"children":["$","a",null,{"href":"#commoditize-everything-in-healthcare","children":"Commoditize everything in healthcare"}]}],["$","li","the-premium-people-are-willing-to-pay-for",{"children":["$","a",null,{"href":"#the-premium-people-are-willing-to-pay-for","children":"The premium people are willing to pay for"}]}],["$","li","sullys-play",{"children":["$","a",null,{"href":"#sullys-play","children":"Sully's play"}]}],["$","li","the-autonomous-operating-system",{"children":["$","a",null,{"href":"#the-autonomous-operating-system","children":"The autonomous operating system"}]}]]}]]}]]}],["$","div",null,{"className":"prose","dangerouslySetInnerHTML":{"__html":"$10"}}],"$L11","$L12","$L13"]}]
+11:["$","section",null,{"aria-label":"Citation","children":[["$","h2",null,{"className":"rule-label","children":[["$","span",null,{"children":"Cite"}],["$","span",null,{"className":"line"}]]}],["$","pre",null,{"className":"cite-block","children":"@misc{omar2025willcommoditized,\n  author = {Ahmed Omar},\n  title  = {Will \"commoditized AI\" save your mom?},\n  year   = {2025},\n  month  = {nov},\n  url    = {https://ahmedomar701.github.io/next-phase/writing/will-commoditized-ai-save-your-mom/}\n}"}]]}]
+12:["$","nav",null,{"aria-label":"More entries","children":[["$","h2",null,{"className":"rule-label","children":[["$","span",null,{"children":"Adjacent"}],["$","span",null,{"className":"line"}]]}],["$","div",null,{"className":"pager","children":[["$","$L2",null,{"className":"pager-item","href":"/writing/from-intelligence-to-autonomy/","children":[["$","span",null,{"className":"pager-dir","children":"← older"}],["$","span",null,{"className":"pager-title","children":"From intelligence to autonomy"}]]}],["$","$L2",null,{"className":"pager-item is-next","href":"/writing/the-autonomous-era/","children":[["$","span",null,{"className":"pager-dir","children":"newer →"}],["$","span",null,{"className":"pager-title","children":"The Autonomous Era"}]]}]]}]]}]
+13:["$","$L2",null,{"className":"back-link","href":"/","children":"← back to index"}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+14:I[27201,["/next-phase/_next/static/chunks/22bksh_y65dub.js"],"IconMark"]
+9:null
+e:[["$","title","0",{"children":"Will \"commoditized AI\" save your mom? — Ahmed Omar"}],["$","meta","1",{"name":"description","content":"The commodity layer of healthcare AI is heading to zero. The money, and the lives, sit in the 1% that large incumbents cannot afford to be great at."}],["$","meta","2",{"name":"author","content":"Ahmed Omar"}],["$","link","3",{"rel":"canonical","href":"https://ahmedomar701.github.io/next-phase/writing/will-commoditized-ai-save-your-mom/"}],["$","meta","4",{"property":"og:title","content":"Will \"commoditized AI\" save your mom?"}],["$","meta","5",{"property":"og:description","content":"The commodity layer of healthcare AI is heading to zero. The money, and the lives, sit in the 1% that large incumbents cannot afford to be great at."}],["$","meta","6",{"property":"og:type","content":"article"}],["$","meta","7",{"property":"article:published_time","content":"2025-11-12"}],["$","meta","8",{"property":"article:modified_time","content":"2025-11-12"}],["$","meta","9",{"property":"article:tag","content":"commoditization"}],["$","meta","10",{"property":"article:tag","content":"healthcare"}],["$","meta","11",{"property":"article:tag","content":"autonomy"}],["$","meta","12",{"name":"twitter:card","content":"summary"}],["$","meta","13",{"name":"twitter:title","content":"Will \"commoditized AI\" save your mom?"}],["$","meta","14",{"name":"twitter:description","content":"The commodity layer of healthcare AI is heading to zero. The money, and the lives, sit in the 1% that large incumbents cannot afford to be great at."}],["$","link","15",{"rel":"icon","href":"/next-phase/icon.svg?icon.39plxf1m2lssr.svg","sizes":"any","type":"image/svg+xml"}],["$","$L14","16",{}]]
