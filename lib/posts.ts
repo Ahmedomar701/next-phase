@@ -90,19 +90,22 @@ function loadAll(): Post[] {
   const chronological = [...parsed].sort((a, b) =>
     a.date === b.date ? a.slug.localeCompare(b.slug) : a.date.localeCompare(b.date),
   );
-  chronological.forEach((post, i) => {
-    post.serial = i + 1;
-  });
-
   cache = chronological.reverse();
   return cache;
 }
 
 const isPublished = (post: Post) => !post.draft || process.env.NODE_ENV === 'development';
 
-/** Newest first. Drafts are visible in `next dev` only. */
+/** Newest first. Drafts are visible in `next dev` only. Serials skip drafts. */
 export function getPosts(): Post[] {
-  return loadAll().filter(isPublished);
+  const posts = loadAll().filter(isPublished);
+  const oldestFirst = [...posts].sort((a, b) =>
+    a.date === b.date ? a.slug.localeCompare(b.slug) : a.date.localeCompare(b.date),
+  );
+  oldestFirst.forEach((post, i) => {
+    post.serial = i + 1;
+  });
+  return posts;
 }
 
 export function getPost(slug: string): Post | undefined {
