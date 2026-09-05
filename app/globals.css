@@ -224,7 +224,7 @@ hr {
 .footer-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
   padding-top: 1rem;
@@ -242,7 +242,25 @@ hr {
 
 .footer-links {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.footer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--muted);
+}
+
+.footer-icon:hover {
+  color: var(--accent);
+}
+
+.footer-icon svg {
+  display: block;
 }
 
 /* --- shared apparatus -------------------------------------------- */

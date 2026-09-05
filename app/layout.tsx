@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { DM_Mono, DM_Sans } from 'next/font/google';
 import Link from 'next/link';
+import FooterLinks from './footer-links';
 import ThemeToggle from './theme-toggle';
 import { absoluteUrl, site } from '@/lib/site';
 import './globals.css';
@@ -76,15 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <span>
                   © {new Date().getFullYear()} {site.name} · text only, no trackers
                 </span>
-                {site.links.length > 0 && (
-                  <span className="footer-links">
-                    {site.links.map((link) => (
-                      <a key={link.href} href={link.href}>
-                        {link.label}
-                      </a>
-                    ))}
-                  </span>
-                )}
+                <FooterLinks />
               </div>
             </div>
           </footer>
