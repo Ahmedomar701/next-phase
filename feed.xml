@@ -6,7 +6,55 @@
     <atom:link href="https://ahmedomar701.github.io/next-phase/feed.xml" rel="self" type="application/rss+xml" />
     <description>Long-form notes and field reports on technology. Text only: no images, no trackers, no newsletter popups.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Feb 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>What&apos;s not going to change</title>
+      <link>https://ahmedomar701.github.io/next-phase/writing/whats-not-going-to-change/</link>
+      <guid isPermaLink="true">https://ahmedomar701.github.io/next-phase/writing/whats-not-going-to-change/</guid>
+      <pubDate>Sat, 05 Sep 2026 12:00:00 GMT</pubDate>
+      <description>The market is moving faster than the regulations, and faster than the clinicians. Before deciding what Sully becomes, here is what will still be true in ten years — and the three levers that follow from that.</description>
+      <category>market</category>
+      <category>growth</category>
+      <category>sully</category>
+      <content:encoded><![CDATA[<p>I’ve been reflecting over the past couple of months on the market, and how fast everything is moving. Not just from the funding side, but from the customer’s side as well.</p>
+<p>Big labs are focused on model advancements, trying to beat benchmarks on coding, legal, healthcare, and going into general use cases. Some, like OpenAI, are going heavily into healthcare. They will try to solve the most-adopted clinician use cases first — scribe, researcher, working with clinical data — and they will eventually subsidize the cost heavily. We may see adoption driven down to less than <code>$40</code>, just to get more clinicians on the platform. Some closed-source models from Meta are going into healthcare too.</p>
+<p>Claude is hiring consultants to go into deep workflows with larger health systems, tapping a <code>$5</code> trillion market for share. OpenAI is also trying to get more clinicians on the platform. Clinicians are not as fast-moving as people think. OpenAI could burn <code>10×</code> more acquiring <code>20%</code> more clinicians than a normal startup moving at a healthy pace. Clinicians have their own pace. We understand them now, and we get it. We know what they want to see, and we’re getting better at what motivates them. This is something the big labs will never get — not because it’s complicated, but because it’s just how those clinicians have been practicing for decades.</p>
+<p>Larger consumer companies are now working on automating the lab side, and companies like Superpower and Neko are going after proactive care on the patient side.</p>
+<p>Yet regulations are not moving at that speed. We saw that first-hand with Doctronic — again, a story where regulations bring down tech advancements.</p>
+<p>We studied a lot of case studies before we built Sully. That’s why we chose this lean approach to healthcare: start by solving the simplest, lowest-level problems, and go up the stack as we grow. Even with proactive care, prescriptions limit the whole experience. Patients will still have to go back to a doctor or a platform to get a sign-off on their medications.</p>
+<p>Healthcare has historically never been winner-takes-all. Even the largest, most dominant player has <code>43%</code> market share (Epic). What’s the reason? What’s causing a non-monopolistic market? Why did Microsoft spend <code>$30B+</code> and still sit at <code>15%</code>? With Abridge launching new products, and others copying everything we do — where does Sully stand in all this?</p>
+<figure class="figure">
+<pre class="figure-body figure-frame">player                         spend           share
+Epic                           —               43 %
+Microsoft                      $30B+           15 %</pre>
+<figcaption><span class="figure-label">Fig. 1</span> Market share in a non-monopolistic stack. Epic is the ceiling so far.</figcaption>
+</figure>
+<p><strong>This is the big question.</strong></p>
+<p>Should Sully be the connection layer between all those players? Should Sully orchestrate all those layers? Or should Sully replace the entire stack, including hospital systems, in the future? This is something we will incrementally understand as we grow. For now, we understand what clinicians and hospitals want, and we know what the ultimate experience looks like for the next <code>1–2</code> years — the experience most AI players are not even thinking about today.</p>
+<p>Before asking what’s going to change, or what Sully should be doing, we should also understand what’s <em>not</em> going to change in ten years. That gives us clarity on where to focus today, tomorrow, and later.</p>
+<h2 id="whats-not-going-to-change-in-10-years">What’s not going to change in 10 years</h2>
+<p>Humans will always want:</p>
+<ul>
+<li>Hospitals that are more intelligent, or that use cutting-edge technology to treat patients.</li>
+<li>A stable, self-improving, integrated platform that keeps getting better and can be customized.</li>
+<li>Personalization and a super-simple user experience.</li>
+<li>Fast, lower-cost models and platforms with high precision.</li>
+<li>Privacy. In healthcare it’s <em>big</em> — someone they can trust not to use their data without consent.</li>
+</ul>
+<h2 id="sully-20">Sully 2.0</h2>
+<p>What we know is that we need to become an autonomous system. It starts with the context layer between all the agents, systems, and platforms. We know how to use that context today to automate the vast majority of low-level clinical and non-clinical tasks. We’re automating human hours with the context we’re getting. Tomorrow, with this same context, we may be able to prevent diabetes.</p>
+<p>Our focus today should be <strong>growth at all costs</strong> — without sacrificing margins — because that’s what differentiates us from the big labs, and that’s what will keep us alive when the venture market dries out.</p>
+<h2 id="three-levers">Three levers</h2>
+<p>What are the three levers we need to pull in order to grow?</p>
+<ol>
+<li><strong>Double down on selling a platform with L1 agents</strong> — five agents, done well, plus pricing.</li>
+<li><strong>Move to self-serve on every front.</strong> Build experiences that help us scale faster.</li>
+<li><strong>Scale intelligence.</strong> Build APIs to power Sully’s suite of products, then package and resell them.</li>
+</ol>
+<p>If those three levers are executed really well, with the right team and the right plan, we will cross <code>$100M</code> in revenue in 24 months. Inshallah.</p>
+<p>Let’s cut through the noise and focus on a few things, and do them really, really well.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>The Autonomous Era</title>
       <link>https://ahmedomar701.github.io/next-phase/writing/the-autonomous-era/</link>
