@@ -4,8 +4,8 @@ date: 2026-09-05
 abstract: >-
   The market is moving faster than the regulations, and faster than the
   clinicians. Before deciding what Sully becomes, here is what will still be
-  true in ten years — and the three levers that follow from that.
-tags: [market, growth, sully]
+  true in ten years.
+tags: [market, healthcare]
 ---
 
 I've been reflecting over the past couple of months on the market, and how fast everything is moving. Not just from the funding side, but from the customer's side as well.
@@ -43,21 +43,3 @@ Humans will always want:
 - Personalization and a super-simple user experience.
 - Fast, lower-cost models and platforms with high precision.
 - Privacy. In healthcare it's *big* — someone they can trust not to use their data without consent.
-
-## Sully 2.0
-
-What we know is that we need to become an autonomous system. It starts with the context layer between all the agents, systems, and platforms. We know how to use that context today to automate the vast majority of low-level clinical and non-clinical tasks. We're automating human hours with the context we're getting. Tomorrow, with this same context, we may be able to prevent diabetes.
-
-Our focus today should be **growth at all costs** — without sacrificing margins — because that's what differentiates us from the big labs, and that's what will keep us alive when the venture market dries out.
-
-## Three levers
-
-What are the three levers we need to pull in order to grow?
-
-1. **Double down on selling a platform with L1 agents** — five agents, done well, plus pricing.
-2. **Move to self-serve on every front.** Build experiences that help us scale faster.
-3. **Scale intelligence.** Build APIs to power Sully's suite of products, then package and resell them.
-
-If those three levers are executed really well, with the right team and the right plan, we will cross `$100M` in revenue in 24 months. Inshallah.
-
-Let's cut through the noise and focus on a few things, and do them really, really well.
