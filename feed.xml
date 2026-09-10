@@ -12,10 +12,9 @@
       <link>https://ahmedomar701.github.io/next-phase/writing/whats-not-going-to-change/</link>
       <guid isPermaLink="true">https://ahmedomar701.github.io/next-phase/writing/whats-not-going-to-change/</guid>
       <pubDate>Sat, 05 Sep 2026 12:00:00 GMT</pubDate>
-      <description>The market is moving faster than the regulations, and faster than the clinicians. Before deciding what Sully becomes, here is what will still be true in ten years — and the three levers that follow from that.</description>
+      <description>The market is moving faster than the regulations, and faster than the clinicians. Before deciding what Sully becomes, here is what will still be true in ten years.</description>
       <category>market</category>
-      <category>growth</category>
-      <category>sully</category>
+      <category>healthcare</category>
       <content:encoded><![CDATA[<p>I’ve been reflecting over the past couple of months on the market, and how fast everything is moving. Not just from the funding side, but from the customer’s side as well.</p>
 <p>Big labs are focused on model advancements, trying to beat benchmarks on coding, legal, healthcare, and going into general use cases. Some, like OpenAI, are going heavily into healthcare. They will try to solve the most-adopted clinician use cases first — scribe, researcher, working with clinical data — and they will eventually subsidize the cost heavily. We may see adoption driven down to less than <code>$40</code>, just to get more clinicians on the platform. Some closed-source models from Meta are going into healthcare too.</p>
 <p>Claude is hiring consultants to go into deep workflows with larger health systems, tapping a <code>$5</code> trillion market for share. OpenAI is also trying to get more clinicians on the platform. Clinicians are not as fast-moving as people think. OpenAI could burn <code>10×</code> more acquiring <code>20%</code> more clinicians than a normal startup moving at a healthy pace. Clinicians have their own pace. We understand them now, and we get it. We know what they want to see, and we’re getting better at what motivates them. This is something the big labs will never get — not because it’s complicated, but because it’s just how those clinicians have been practicing for decades.</p>
@@ -41,18 +40,6 @@ Microsoft                      $30B+           15 %</pre>
 <li>Fast, lower-cost models and platforms with high precision.</li>
 <li>Privacy. In healthcare it’s <em>big</em> — someone they can trust not to use their data without consent.</li>
 </ul>
-<h2 id="sully-20">Sully 2.0</h2>
-<p>What we know is that we need to become an autonomous system. It starts with the context layer between all the agents, systems, and platforms. We know how to use that context today to automate the vast majority of low-level clinical and non-clinical tasks. We’re automating human hours with the context we’re getting. Tomorrow, with this same context, we may be able to prevent diabetes.</p>
-<p>Our focus today should be <strong>growth at all costs</strong> — without sacrificing margins — because that’s what differentiates us from the big labs, and that’s what will keep us alive when the venture market dries out.</p>
-<h2 id="three-levers">Three levers</h2>
-<p>What are the three levers we need to pull in order to grow?</p>
-<ol>
-<li><strong>Double down on selling a platform with L1 agents</strong> — five agents, done well, plus pricing.</li>
-<li><strong>Move to self-serve on every front.</strong> Build experiences that help us scale faster.</li>
-<li><strong>Scale intelligence.</strong> Build APIs to power Sully’s suite of products, then package and resell them.</li>
-</ol>
-<p>If those three levers are executed really well, with the right team and the right plan, we will cross <code>$100M</code> in revenue in 24 months. Inshallah.</p>
-<p>Let’s cut through the noise and focus on a few things, and do them really, really well.</p>
 ]]></content:encoded>
     </item>
     <item>
